@@ -88,7 +88,7 @@ const Home = () => {
             <Col lg="12" className="text-center">
               <h2 className="section__title">Trending products</h2>
             </Col>
-            <Row lg="4">
+            <Row>
               <ProductsList data={trendingProduct} />
             </Row>
           </Row>
@@ -101,7 +101,7 @@ const Home = () => {
             <Col lg="12" className="text-center">
               <h2 className="section__title">Best sales</h2>
             </Col>
-            <Row lg="4">
+            <Row>
               <ProductsList data={bestSalesProduct} />
             </Row>
           </Row>
@@ -111,9 +111,9 @@ const Home = () => {
       <section className="timer__count">
         <Container>
           <Row>
-            <Col lg="6" md="6">
+            <Col lg="6" md="12" className="count__down-col">
               <div className="clock__top-content">
-                <h4 className="text-white fs-6">Limited Offes</h4>
+                <h4 className="text-white fs-6 mb-2">Limited Offes</h4>
                 <h3 className="text-white fs-5 mb-3">Quality Armchair</h3>
               </div>
               <Clock />
@@ -126,7 +126,7 @@ const Home = () => {
               </motion.button>
             </Col>
 
-            <Col lg="6" md="6" className="text-end">
+            <Col lg="6" md="12" className="text-end counter__img">
               <img src={counterImg} alt="" />
             </Col>
           </Row>
@@ -139,7 +139,7 @@ const Home = () => {
             <Col lg="12" className="text-center mb-5">
               <h2 className="section__title">New Arrivals</h2>
             </Col>
-            <Row lg="4">
+            <Row>
               <ProductsList data={mobileProducts} />
               <ProductsList data={wirelessProducts} />
             </Row>
@@ -152,7 +152,7 @@ const Home = () => {
             <Col lg="12" className="text-center mb-5">
               <h2 className="section__title">Popular in Category</h2>
             </Col>
-            <Row lg="4">
+            <Row>
               <ProductsList data={popularProducts} />
             </Row>
           </Row>

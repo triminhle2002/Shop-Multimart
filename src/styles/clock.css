@@ -1,0 +1,15 @@
+
+
+@media only screen and (max-width: 992px) {
+    .clock__wapper {
+        justify-content: center;
+    }
+
+    .clock__date h1 {
+        font-size: 1.1rem !important;
+    }
+
+    .clock__date h5 {
+        font-size: 0.9rem !important;
+    }
+}
